@@ -1,816 +1,200 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Interactive Intelligence Lab - IITM</title>
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />
-    <!-- BOOTSTRAP CORE STYLE CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME CSS -->
-<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
-     <!-- FLEXSLIDER CSS -->
-<link href="assets/css/flexslider.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />    
-  <!-- Google	Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
-    
-</head>
-<body data-spy="scroll" data-target="#scroll-menu">
-   
- <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/logo180-50.png" alt=""  /></a>
-            </div>
-            <div class="navbar-collapse collapse move-me" id="scroll-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#home">Home</a></li>
-                     <li><a href="#features-sec">Research areas</a></li>
-                    <li><a href="#faculty-sec">People</a></li>
-                     <li><a href="#course-sec">Publications</a></li>
-                     <li><a href="#contact-sec">Join us</a></li>
-                </ul>
-            </div>
-           
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Denzil Francis Crasta">
+    <link rel="shortcut icon" href="images/flaticon.ico">
+
+    <title>IITM Interactive Intelligence Lab </title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/iil.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar with-shadow navbar-expand-md navbar-light fixed-top bg-light">
+
+    <div class="container">
+      <!-- Logo Section -->
+      <a class="navbar-brand" href="#">
+        <img src="images/iillogo.png" width="30" height="30" class="d-inline-block align-top" alt="IIL Logo">
+       <span class="navbar-brand-expanded hidden-md-down"> Interactive Intelligence Lab</span>
+       <span class="navbar-brand-short hidden-md-up">IIL</span> <span class="logotext-tail"> IITM </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html">People</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact-Us</a>
+          </li>
+        </ul>
+      </div>
     </div>
-      <!--NAVBAR SECTION END-->
-       <div class="home-sec" id="home" >
-           <div class="overlay">
- <div class="container">
-           <div class="row text-center " >
-           
-               <div class="col-lg-12  col-md-12 col-sm-12">
-                            <section class="main-slider">
-  <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    </nav>
 
+    <div id="research-areas-carousel" class="carousel slide" data-ride="carousel">
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+      <ol class="carousel-indicators">
+        <li data-target="#research-areas-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#research-areas-carousel" data-slide-to="1"></li>
+        <li data-target="#research-areas-carousel" data-slide-to="2"></li>
+      </ol>
 
+      <div class="carousel-inner">
 
-    <!-- Carousel items -->
-    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="images/carousel3_bg.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption  d-md-block text-left">
+              <h1>Network Representation Learning</h1>
+              <p> We learn distributed vector representations of the vertices in large-scale networks that
+                  preserve structural and semantic similarity of the vertices in the embedding space </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Slide 1 : Active -->
-      <div class="item active">
-        <img src="https://cl.ly/image/3J45082V2c1L/banner_01.jpg" alt="">
-        <div class="carousel-caption">
-          <h3>RL</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-        </div><!-- /.carousel-caption -->
-      </div><!-- /Slide1 -->
-
-      <!-- Slide 2 -->
-      <div class="item ">
-        <img src="https://cl.ly/image/2J0z1t033B25/banner_02.jpg" alt="">
-        <div class="carousel-caption">
-          <h3>NLP</h3>
-          <p>Etiam porta sem malesuada magna mollis euismod.</p>
-        </div><!-- /.carousel-caption -->
-      </div><!-- /Slide2 -->
-
-      <!-- Slide 3 -->
-      <div class="item ">
-        <img src="https://cl.ly/image/1a3i3k0F3B3h/banner_03.jpg" alt="">
-        <div class="carousel-caption">
-          <h3>ML</h3>
-          <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-        </div><!-- /.carousel-caption -->
-      </div><!-- /Slide3 -->
-
-      <!-- Slide 4 -->
-      <div class="item ">
-        <img src="https://cl.ly/image/1n0A2k0Z111n/banner_04.jpg" alt="">
-        <div class="carousel-caption">
-          <h3>Networks</h3>
-          <p>Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
-        </div><!-- /.carousel-caption -->
-      </div><!-- /Slide4 -->
-
-    </div><!-- /.carousel-inner -->
-
-
-    <!-- Controls -->
-    <div class="control-box">
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="control-icon prev fa fa-chevron-left" aria-hidden="true"></span>
+        <div class="carousel-item">
+          <img class="second-slide" src="images/carousel2_bg.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption d-md-block text-left">
+              <h1> Reinforcement Learning</h1>
+              <p> Learning algorithms that enable software agents to take actions that maximizes some notion of cumulative 
+                  reward.
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="images/carousel1_bg.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption d-md-block text-left">
+              <h1> Natural Language Processing </h1>
+              <p> We develop algorithms to process and understand natural language to aid interaction between computers
+                  and humans
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#research-areas-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="control-icon next fa fa-chevron-right" aria-hidden="true"></span>
+      <a class="carousel-control-next" href="#research-areas-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.control-box -->
-
-
-  </div><!-- /#myCarousel -->
-</section><!-- /.main-slider -->
-
-
-            </div>
-               </div>
-                </div>
-           </div>
-           
-       </div>
-       <!--HOME SECTION END-->   
-    <div  class="tag-line" >
-         <div class="container">
-           <div class="row  text-center" >
-           
-               <div class="col-lg-12  col-md-12 col-sm-12">
-               
-        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> Welcome to the Special Interest Group on Networks (SIGNET)<i class="fa fa-circle-o-notch"></i> </h2>
-                   </div>
-               </div>
-             </div>
-        
     </div>
-    <!--HOME SECTION TAG LINE END-->   
-         <div id="features-sec" class="container" >
-             <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">Areas of focus </h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s" align="justify">
-                      The group is active in a wide range of Networks related areas. The research focus of the group spans from modelling a syatem as a complex network to the lower dimensional representation of networks with recent techniques, such as deep learning methods.
-					  Overall activities of the group can be divided into the following three categories.
-                         </p>
-                 </div>
 
-             </div>
-             <!--/.HEADER LINE END-->
+    <!-- News and Spotlight Events  --> 
+    <div class="container news">
 
+      <div class="row">
 
-           <div class="row" >
-           
-               
-                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-                     <div class="about-div">
-						<!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
-                     <!--<i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i> -->
-						 <i class="fa fa-bars fa-4x icon-round-border" ></i>
-                   <h3 >Multiplex Network Analysis</h3>
-                       <hr />
-                   <p align="justify">
-					   A multiplex network is a special case of multlayer network in which each layer is restricted to have same set of nodes but can have different set of edges.
-                        There is an increasingly sophisticated attempt to model the real-world systems as multiplex network which have have yielded valuable insight in the fields of social network analysis, economics, 
-					    transport, ecology, medicine, biology, commerce, climatology, physics, computational neuroscience etc. 
-                       
-                   </p>
-               <a href="https://sites.google.com/view/signetprojects/multiplex-networks?" target="_blank" class="btn btn-info btn-set"  >View Projects</a>
-                </div>
-                   </div>
-                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-                     <div class="about-div">
-						 						 <i class="fa fa-star-half-o fa-4x icon-round-border" ></i>
-                     <!--<i class="fa fa-object-group fa-4x icon-round-border" ></i> -->
-                   <h3 >Representation Learning</h3>
-                       <hr />
-                   <p align="justify">
-                       Representation learning is a set of techniques with the goal of efficiently mapping data structures into convenient latent spaces. This type of embeddings has demonstrated to be useful either for dimensionality reduction or for gaining semantic content. 
-					   Network Representation Learning (NRL) aims at learning distributed vector representation for each vertex in a network. NRL has shown its effectiveness in many tasks such as image classification and text mining.
-                       
-                   </p>
-               <a href="https://sites.google.com/view/signetprojects/networks-representation-learning?" target="_blank" class="btn btn-info btn-set"  >View Projects</a>
-                </div>
-                   </div>
-                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-                     <div class="about-div">
-                     <i class="fa fa-signal fa-4x icon-round-border" ></i>
-                   <h3 >Large & Distributed Graph Mining</h3>
-                       <hr />
-                   <p align="justify">
-                       Ranging from social networks to targeted advertising, seeing big graphs to capture the structure in data is not an astonioshing thing. Analysiss of large graphs is central to recent advances in machine learning and data mining. 
-					   Unfortunately, directly applying existing tools to large graph computation tasks can be cumbersome and inefficient. The need for intuitive, scalable tools for graph computation has lead to the exploration of mining of large graphs.
-                   </p>
-               <a href="https://sites.google.com/view/signetprojects/distributed-graph-mining?" target="_blank" class="btn btn-info btn-set"  >View Projects</a>
-                </div>
-                   </div>
-                 
-                 
-               </div>
-             </div>
+        <div class="col-sm-8 news">
+          <h3 class="col-sm-6 section-title"> News </h3>
 
-
-
-    <div class="row" >
-
-        <div class="col-lg-6  col-md-6 col-sm-6">
-            
-          <h2>
-            News
-          </h2>
-
-            <div class="views-field views-field-nothing">        
-              <span class="field-content">
-                <div class="postcard-left-wrap">
-                  <div class="postcard-col1">
-                    <a href="/news/department-news/09-13-2017/knight-hennessy-scholars-program"><img typeof="foaf:Image" src="https://ee.stanford.edu/sites/default/files/styles/image_150x150/public/news_images/KHS-photo.jpg?itok=CwqLg8D5" width="132" height="132" alt="John Hennessy and Philip Knight. Image credit: L.A. Cicero" /></a>
-                  </div>
-                  <div class="postcard-col2">
-                  <div class="descriptor">
-                  <div class="bolder">
-                  <div class="date-repeat-instance">
-                    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-09-13T00:00:00-07:00">September 2017</span>
-                  </div>
-                  </div>      
-                  <div class="bolder"><a href="/news/department-news/09-13-2017/knight-hennessy-scholars-program">Knight-Hennessy Scholars program</a>
-                  </div>
-                  </div>
-                  <div>Preparing leaders to address global challenges in the 21st century and beyond.</div>
-                  </div>
-                  </div>
-              </span>
+          <div class="card"> 
+            <div class="row no-gutters align-items-center">
+            <div class="col-sm-2">
+            <img  class="news-img img-responsive center-block" src="images/news/Kamakoti.jpg" alt="Card image cap" >
             </div>
-
-            <div class="views-field views-field-nothing">        
-              <span class="field-content">
-                <div class="postcard-left-wrap">
-                  <div class="postcard-col1">
-                    <a href="/news/department-news/09-13-2017/knight-hennessy-scholars-program"><img typeof="foaf:Image" src="https://ee.stanford.edu/sites/default/files/styles/image_150x150/public/news_images/KHS-photo.jpg?itok=CwqLg8D5" width="132" height="132" alt="John Hennessy and Philip Knight. Image credit: L.A. Cicero" /></a>
-                  </div>
-                  <div class="postcard-col2">
-                  <div class="descriptor">
-                  <div class="bolder">
-                  <div class="date-repeat-instance">
-                    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-09-13T00:00:00-07:00">September 2017</span>
-                  </div>
-                  </div>      
-                  <div class="bolder"><a href="/news/department-news/09-13-2017/knight-hennessy-scholars-program">Knight-Hennessy Scholars program</a>
-                  </div>
-                  </div>
-                  <div>Preparing leaders to address global challenges in the 21st century and beyond.</div>
-                  </div>
-                  </div>
-              </span>
+            <div class="card-body col-sm-10">
+              <h6 class="card-subtitle mb-2 ">26 August 2017</h6>
+              <a class="card-title" href="#">Prof. V. Kamakoti to chair GoI Task Force on AI for Development across various fields.</a>
+              <p class="card-text">
+                 Commerce and Industry Minister Nirmala Sitharaman has constituted a Task Force chaired by V. Kamakoti of IIT Madras to explore possibilities to leverage Artificial Intelligence (AI) for development across various fields
+              </p>
             </div>
+            </div>
+          </div>
 
-          <div class="more-link">
-            <a href="/news">
-                More News Stories  
-            </a>
+          <div class="card"> 
+            <div class="row no-gutters align-items-center">
+            <div class="col-sm-2">
+            <img  class="news-img img-responsive center-block" src="images/news/preksha.jpg" alt="Card image cap" >
+            </div>
+            <div class="card-body col-sm-10">
+              <h6 class="card-subtitle mb-2">12 July 2017</h6>
+              <a class="card-title" href="#">Preksha Nema (CS15D201) has been selected for Google India PhD Fellowship</a>
+              <p class="card-text">
+                 Preksha Nema (CS15D201) who is a PhD scholar at the CSE dept has been selected for Google India PhD Fellowship.
+              </p>
+            </div>
+            </div>
           </div>
 
         </div>
-        
-        
-        <!-- The Events column-->
-        <div class="col-lg-6  col-md-6 col-sm-6">
-            
-          <h2>
-            Events
-          </h2>
+        <div class="col-sm-4 events">
+          <h3 class="section-title"> Events </h3> 
 
-          <div class="view-content">
-            <div class="item-list">    
-              <ul>          
-                <li class="views-row views-row-1 views-row-odd views-row-first">  
-                  <div class="views-field views-field-nothing">        
-                    <span class="field-content">
-                      <div class="postcard-left">
-                        <div class="date-stacked">
-                          <div class="date-month">
-                            <a href="/events/calendar/month/2017-09">
-                              <div class="date-repeat-instance">
-                                <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-09-15T17:00:00-07:00">Sep
-                                </span>
-                              </div>
-                            </a>
-                          </div>
-                          <div class="date-day">
-                            <a href="/events/calendar/day/2017-09-15">
-                              <div class="date-repeat-instance">
-                                <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-09-15T17:00:00-07:00">15
-                                </span>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      <!-- </div> -->
-                        <div class="postcard-col2">
-                          <div class="descriptor bolder">
-                            <a href="/event/student/bing-overseas-studies-program-teaching-fellow-application-deadline">Bing Overseas Studies Program Teaching Fellow Application deadline
-                            </a>
-                          </div>
-                          <span class="hidden">
-                          </span>
-                          <div class="descriptor hidden">
-                          </div>
-                          <div class="descriptor">
-                            <div class="date-repeat-instance">
-                              <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2017-09-15T17:00:00-07:00">5:00 pm
-                              </span>
-                            </div>
-                          </div>
-                          <div class="hidden">Application deadline, Kyoto Teaching Fellowship
-                          </div>
-                        </div>
-                      </div>
-                    </span>  
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div class="card event-card"> 
+              <div class="calbox"> 
+               4:30pm, 21 Sep @ Alan M. Turing Hall
+              </div>
+              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
+          </div>
+
+          <div class="card event-card"> 
+              <div class="calbox"> 
+                2pm, 23 Sep @ Ada Lovelace Hall
+              </div>
+              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
+          </div>
+
+          <div class="card event-card"> 
+              <div class="calbox"> 
+                2pm, 25 Sep @ Ada Lovelace Hall
+              </div>
+              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
           </div>
         </div>
+      </div>
 
     </div>
 
-   <!-- FEATURES SECTION END-->
-    <div id="faculty-sec" >
-    <div class="container set-pad">
-             <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">People at SIGNET </h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s">
-                      The Special Interest Group on Networks comprises of faculty, doctoral, masters, dual degree and undergraduate students. The group has several external collaborations with people from industries and national/international universities.
-                         </p>
-                 </div>
-
-             </div>
-             <!--/.HEADER LINE END-->
-
-           <div class="row" >
-               
-						 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-							 <div class="faculty-div">
-							 <img src="assets/img/faculty/ravi.jpg"  class="img-rounded" />
-						   <h3 >Dr. B. Ravindran</h3>
-						 <hr />
-								 <h4>Associate Professor <br /> <!-- Department of Computer Science and Engineering --></h4>
-						   <p >
-							   Machine learning, Reinforcement learning, Social Network Analysis, Data and text mining 
-						   </p>
-						</div>
-						   </div>
-						 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-							 <div class="faculty-div">
-							 <img src="assets/img/faculty/mitesh.jpg"  class="img-rounded" />
-						   <h3 >Dr. Mitesh Khapra</h3>
-						 <hr />
-								 <h4>Assistant Professor <br /> <!-- Department of Computer Science and Engineering --></h4>
-						   <p >
-							   Statistical Machine Translation, Text Analytics, Deep Learning and Crowd-sourcing
-						   </p>
-						</div>
-						   </div>
-					   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-							 <img src="assets/img/faculty/venkat.jpg" class="img-rounded" />
-						   <h3 >Dr. Venkatesh R.</h3>
-						 <hr />
-								 <h4>Assistant Professor <br /> <!-- Department of Electrical Engineering --> </h4>
-						   <p >
-							   Performance analysis and optimization of ad hoc wireless networks, Communication protocols for industrial applications <!--, Random access protocols, Performance evaluation of IEEE 802.11 WLANs, QoS provisioning in 3G/4G cellular wireless networks -->
-						   </p>
-						</div>
-						   </div>
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/sudarsun.jpg" class="img-rounded" />
-								<h3 >Sudarsun S.</h3>
-								<hr />
-								 <h4>Ph.D. Scholar<br /> <!-- Department of Electrical Engineering --> </h4>
-								<p >
-									Natural Language Processing, Data Mining, Machine Learning, Distributed Computing, Large Graph Mining<!-- Large Scale Search Engineering & Data Analytics -->
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/tarun.jpg" class="img-rounded" />
-								<h3 >Tarun Kumar</h3>
-								<hr />
-								 <h4>Ph.D. Scholar<br /> <!-- Department of Electrical Engineering --> </h4>
-								<p >
-									Machine Learning, Networks Representation Learning, Learning on Hypergraphs and Multiplex networks
-								</p>
-							</div>
-						</div>
-		
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/priyesh.jpg" class="img-rounded" />
-								<h3 >Priyesh V.</h3>
-								<hr />
-								 <h4>M.S. Scholar<br /> <!-- Department of Electrical Engineering --> </h4>
-								<p >
-									Learning on Networks, Multiview Learning, Class Imbalance learning, Deep Learning, Networks Representation Learning
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/beethika.jpg" class="img-rounded" />
-								<h3 >Beethika Tripathi</h3>
-								<hr />
-								 <h4>M.S. Scholar<br /> <!-- Department of Electrical Engineering --> </h4>
-								<p >
-									Multiplex Network Analysis, Complex Network Analysis, Machine Learning, Deep Learning
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/akash.jpg" class="img-rounded" />
-								<h3 >Akash Jain</h3>
-								<hr />
-								 <h4>M.S. Scholar<br /> <!-- Department of Electrical Engineering --> </h4>
-								<p >
-									Social Network Analysis, Distributed Computing for large networks, Deep Learning for networks
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/denzil.jpg" class="img-rounded" />
-								<h3 >Denzil Crasta</h3>
-								<hr />
-								 <h4>M.Tech. Scholar<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									----------------------------Yet to update--------------------------------------------------------------------------------------
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/mohan.jpg" class="img-rounded" />
-								<h3 >Mohan Bhambhani</h3>
-								<hr />
-								 <h4>Dual Degree<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									Deep Learning for Networks, Computer Vision, Natural Language Processing
-								</p>
-							</div>
-						</div>
-						
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/ujjawal.jpg" class="img-rounded" />
-								<h3 >Ujjawal Soni</h3>
-								<hr />
-								 <h4>Dual Degree<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									Deep Learning for Networks, Networks Representation Learning
-								</p>
-							</div>
-						</div>
-			   			<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/rohith.jpg" class="img-rounded" />
-								<h3 >Rohith B.</h3>
-								<hr />
-								 <h4>Dual Degree<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									Opinion Dynamics, Application specific random walks in social networks
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/sankaran.jpg" class="img-rounded" />
-								<h3 >Sankaran V.</h3>
-								<hr />
-								 <h4>Project Associate<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									Deep Learning for Networks, Networks Representation Learning, Generative Modeling
-								</p>
-							</div>
-						</div>
-			   
-			   			<div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-							 <div class="faculty-div">
-								<img src="assets/img/faculty/soya.jpg" class="img-rounded" />
-								<h3 >Anasua Mitra.</h3>
-								<hr />
-								 <h4>Intern<br /> <!-- Department of Electrical Engineering -->  </h4>
-								<p >
-									Deep Learning for Networks, Networks Representation Learning
-								</p>
-							</div>
-						</div>
-			   			
-               </div>
-             </div>
-        </div>
-    <!-- FACULTY SECTION END-->
-      <div id="course-sec" class="container set-pad">
-             <!-- <div class="row text-center"> -->
-             <!--    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2"> -->
-					<h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">
-					<center>
-					Publications </center></h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s" align="left">
-<ol>
-<p></p><li> Jain, A., Nasre, R., and Ravindran, B. (2017) &quot;DCEIL:
-Distributed Community Detection with the CEIL Score&quot;. To appear in the
-Proceedings of the Nineteenth IEEE International Conference on High Performance
-Computing and Communication (HPCC 2017). IEEE Press. 
-
-<p></p><li> Gupte, P. V., Ravindran, B., and Parthasarthy, S. (2017) &quot;Role
-Discovery in Graphs using  Global Features: Algorithms, Applications and a
-Novel Evaluation Strategy&quot;. In the proceedings of the Thirty-Third IEEE
-International Conference on Data Engineering (ICDE 2017), pp. 771-782.  IEEE
-Press. 
-
-<p></p><li> Sankar, V., and Ravindran, B. (2015) &quot;Parallelization of Game
-Theoretic Centrality Algorithms&quot;. In the Special Issue on Applications of
-Data Sciences of Sadhana, The Engineering Proceedings of the Indian Academy of
-Sciences, September 2015, Volume 40, Issue 6, pp. 1821-1843. Springer. 
-
-<p></p><li> Sankar, V., Shivashankar, S., and Ravindran. B. (2015) &quot;CEIL:
-A Scalable, Resolution Limit Free Approach for Detecting Communities in Large
-Networks&quot;. In the Proceedings of the Twenty Fourth International
-Joint Conference on Artificial Intelligence (IJCAI 2015). 
-<a href="papers/Vishnu_IJCAI15.pdf">PDF</a>
-
-<p></p><li> Pasumarthi, R. K., Narayanam, R., and Ravindran, B. (2015)
-&quot;Near Optimal Strategies for Targeted Marketing on Social Networks&quot;.
-In the Proceedings of the Fourteenth International Conference on
-Autonomous Agents and Multiagent Systems (AAMAS 2015). ACM Press. (Extended Abstract)
-<a href="papers/Ramakumar_AAMAS15.pdf">PDF</a>
-
-<p></p><li> Gurukar, S., Ranu, S., and Ravindran, B. (2015) &quot;COMMIT : A
-Scalable Approach to Mining Communication Motifs from Dynamic Networks&quot;.
-In the Proceedings of ACM SIGMOD Conference on Management of
-Data. ACM Press.
-<a href="papers/Saket_SIGMOD15.pdf">PDF</a>
-
-<p></p><li> Roy, S., and Ravindran, B. (2015) &quot;Measuring Network Centrality
-Using Hypergraphs&quot;. In the Proceedings of the Second ACM-IKDD
-Conference on Data Sciences (IKDD CoDS). ACM Digital Library. <a
-href="papers/Sanjukta_CoDS15.pdf">PDF</a> [Best Student Paper]
-
-<p></p><li> Pasumarthi, R. K., Narayanam, R., and Ravindran, B. (2014)
-&quot;Targeted Influence Maximization through a Social Network&quot;. Presented
-at the NIPS workshop on Networks: From Graphs to Rich Data. <a
-href="https://410f84824e101297359cc81c78f45c7c079eb26c.googledrive.com/host/0Bz6WHrWac3FrWnA5MjZqb3lWa2c/submissions/nips2014networks_submission_12.pdf">PDF</a>
-<font size=+1>+</font>
-
-<p></p><li> Vijayan, P., Shivashankar, S., and Ravindran, B. (2014)
-&quot;Multi-label Collective Classification in Multi-attribute Multi-relational
-Network Data&quot;. In the Proceedings of the IEEE/ACM International
-Conference on Social Networks Analysis and Mining (ASONAM 2014), pp. 509-514. <a
-href="papers/Priyesh_ASONAM_2014.pdf">PDF</a>
-
-<p></p><li> Gupte, P. V. and Ravindran, B. (2014) &quot;Scalable Positional
-Analysis for Studying Evolution of Nodes in Networks&quot;. Accepted for
-presentation in the Workshop on Mining Networks and Graphs, at the Siam
-Conference on Data Mining (SDM 14). <a
-href="http://arxiv.org/abs/1402.3797">arXiv</a> <font size=+1>+</font>
-
-<p></p><li> Gurukar, S., and Ravindran, B. (2014) &quot;Temporal Analysis of
-Telecom Graphs&quot;. In the Proceedings of the Social Networking Workshop at
-COMSNETS 2014. Springer.
-
-<p></p><li> Jain, S. K., Satchidanand, S. N., Maurya, A. K., and Ravindran, B.
-(2014) &quot;Studying Indian Railways Network using Hypergraphs&quot;.  In the
-Proceedings of the Social Networking Workshop at COMSNETS 2014. Springer. (This
-is an expanded version of the poster presented at NetSci 2013.)
-
-<p></p><li> Jain, S. K., Satchidanand, S. N., Maurya, A. K., and Ravindran, B.
-(2013) &quot;Studying Indian Railways Network using Hypergraphs&quot;. Accepted
-as a poster presentation at the International School and Conference on Network
-Science (NetSci 2013). Copenhagen, Denmark.  
-<font size=+1>+</font>
-
-<p></p><li>Michalak, T. P., Aadithya, K. V., Szpzepa&nacute;ski, P. L.,
-Ravindran, B., and Jennings, N. R. (2013) &quot;Efficient Computation of the
-Shapley Value for Game-Theoretic Network Centrality&quot;. In the Journal of
-Artificial Intelligence Research (JAIR), Vol 46, pp. 607-650. March 2013.  AAAI
-Press.
-
-<p></p><li> Chaganty, A., Gaur, P., and Ravindran, B. (2012) &quot;Learning in
-a Small World&quot;. In the Proceedings of the Eleventh International
-Conference on Autonomous Agents and Multiagent Systems (AAMAS 2012), pp. 391-397. ACM Press.
-<a href="papers/Arun_AAMAS_12.pdf">PDF</a>
-
-<p></p><li> Gupte, P. V. and Ravindran, B. (2012) &quot;Multiple Epsilon
-Equitable Partitions - Roles and Positional Analysis for Real World
-Networks&quot;. Accepted for presentation at the Thirty Second Sunbelt Social
-Networks Conference (Sunbelt XXXII).<font size=+1>+</font>
-
-<p></p><li> Dharwez, S., Shivashankar, S., and Ravindran, B. (2012) &quot;Why
-Collective Classification is Successful? : A Homophily based Analysis on
-Network Data&quot;. Accepted for presentation at the Thirty Second Sunbelt
-Social Networks Conference (Sunbelt XXXII).<font size=+1>+</font>
-
-<p></p><li> Saravanan, M., Bharanidharan, S., and Ravindran, B. (2011)
-&quot;Collective Learning of the Community Effect on Chrun&quot;. Accepted at
-the Workshop on Collective Learning and Inference on Structured Data, held in
-conjunction with the Twenty Second European Conference on Machine Learning
-(ECML PKDD 2011).<font size=+1>+</font>
-
-<p></p></li><li> Aadithya, K. V., Ravindran, B., Michalak, T., and Jennings, N.
-R. (2010) "Efficient Computation of the Shapley Value for Centrality in
-Networks". In the Proceedings of the Sixth Workshop on Internet and
-Network Economics (WINE 2010), pp. 1-13. Springer-Verlag.  
-(Associated Technical Report <a href="papers/Karthik_WINE10_TR.pdf">PDF</a>)
-
-<p></p><li>Aadithya, K. V. and Ravindran, B. (2010) "Game Theoretic Network
-Centrality: Exact Formulas and Efficient Algorithms". In the
-Proceedings of the Ninth International Conference on Autonomous Agents and
-Multiagent Systems (AAMAS 2010), pp. 1459-1460. (Extended Abstract)
-<a href="papers/Karthik_AAMAS10.pdf">PDF</a>
-
-<p></p><li> Kate, K. and Ravindran, B. (2009) "Epsilon Equitable Partition: A
-Positional Analysis Method for Large Social Networks". In the
-Proceedings of 15th International Conference on Management of Data (COMAD
-2009).
-<a href="paper_abstracts.html#2009KR">Abstract</a>&nbsp;
-<a href="papers/Kate_COMAD_09.pdf">PDF</a>
-
-</li></ol>                         </p>
-           <!--      </div>  -->
-
-            <!-- </div> -->
-             <!--/.HEADER LINE END-->
 
 
-          <!-- <div class="row set-row-pad" >         Commented by Tarun
-           <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" >
-                 <img src="assets/img/building.jpg" class="img-thumbnail" /> 
-				 
-           </div>
-               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
-                   <div class="panel-group" id="accordion">
-                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.5s">
-                            <div class="panel-heading" >
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
-                                  <strong>   350+</strong> DESIGNING COURSES 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
-                                <div class="panel-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.7s">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
-                                      <strong>   250+</strong> ENGINEERING COURSES 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
-                                <div class="panel-body">
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default" data-scroll-reveal="enter from the bottom after 0.9s">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
-                                        <strong>   153+</strong> MANAGEMENT COURSES 
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse"  style="height: 0px;">
-                                <div class="panel-body">
-                                    <p>
-                                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis egestas mauris ut vehicula. Cras viverra ac orci ac aliquam. Nulla eget condimentum mauris, eget tincidunt est.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
-                       <span style="font-size:40px;">
-                          <strong> 2500 + </strong> 
-                           <hr />
-                           Centers
-                       </span>
-                   </div>
-           </div> Comment end by Tarun -->       
-             
-                 
-                 
-               </div>
-             </div>
-      <!-- COURSES SECTION END-->
-    <div id="contact-sec"   >
-           <div class="overlay">
- <div class="container set-pad">
-      <div class="row text-center">
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Join Us  </h1>
-                     <p data-scroll-reveal="enter from the bottom after 0.3s">
-						<marquee><h3>Internship application process for this session is over!</h3></marquee>
-					 To join our group you can <a href="http://cse.iitm.ac.in/pages.php?pages=NTA="> apply</a> for a Masters or Doctoral program offered by <a href="http://cse.iitm.ac.in/index.php"> The Department of Computer Science and Engineering, IIT Madras. </a>
-					 See the department FAQ <a href="http://www.cse.iitm.ac.in/misc/faq.php">here </a>.<br><br>
-						 For project related queries kindly fill the following form.
+      <!-- FOOTER -->
+      <div class="container">
+      <footer>
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>Interactive Intelligence Lab | IIT Madras &copy; 2017 </p>
+      </footer>
+      </div>
 
-					  <!--If you want to work with us for short (summer/winter internship) or long period, then fill the following form or write us at kumartaruncse@gmail.com -->
-                         </p>
-                 </div>
-
-             </div>
-             <!--/.HEADER LINE END-->
-           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
-           
-               
-                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                    <form >
-                        <div class="form-group">
-                            <input type="text" class="form-control "  required="required" placeholder="Your Name" />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control " required="required"  placeholder="Your Email" />
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group">
-						<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-                            <button type="submit" class="btn btn-info btn-block btn-lg"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a></button> </a>
-                        </div>
-
-                    </form>
-                </div>
-
-                   
-     
-              
-              
-                
-               </div>
-                </div>
-          </div> 
-       </div>
-     <div class="container">
-             <div class="row set-row-pad"  >
-    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
-
-                    <h2 ><strong>Our Location </strong></h2>
-        <hr />
-                    <div ">
-                        <h4>RISE lab,</h4>
-                        <h4>Indian Institute of Technology Madras.</h4>
-                        <h4>Chennai Tamilnadu </h4>
-                        <h4>India - 600036 </h4>
-                    </div>
-
-
-                </div>
-                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
-
-                    <h2 ><strong>Social Connectivity </strong></h2>
-        <hr />
-                    <div >
-                        <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
-                     <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
-                     <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
-                    </div>
-                    </div>
-
-
-                </div>
-                 </div>
-     <!-- CONTACT SECTION END-->
-    <div id="footer">
-          &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
     </div>
-     <!-- FOOTER SECTION END-->
-   
-    <!--  Jquery Core Script -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!--  Core Bootstrap Script -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!--  Flexslider Scripts --> 
-         <script src="assets/js/jquery.flexslider.js"></script>
-     <!--  Scrolling Reveal Script -->
-    <script src="assets/js/scrollReveal.js"></script>
-    <!--  Scroll Scripts --> 
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!--  Custom Scripts --> 
-         <script src="assets/js/custom.js"></script>
-</body>
+
+
+    <!-- Bootstrap core JavaScript -->
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </body>
 </html>
