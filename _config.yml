@@ -1,0 +1,22 @@
+title: Interactive Intelligence Lab
+email:  ravi@cse.iitm.ac.in
+
+description: >
+  Interactive Intelligence Lab
+  
+port: 8000
+baseurl: ""
+url    : "localhost:8000"
+include: ['_pages']
+
+collections:
+  people:
+    permalink: /:collection/:path/
+    output: true
+
+
+authors:
+  denzil:
+    name: Denzil Francis Crasta
+  abhishek:
+    name: Abhishek Naik

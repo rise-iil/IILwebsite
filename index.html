@@ -1,104 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Denzil Francis Crasta">
-    <link rel="shortcut icon" href="images/flaticon.ico">
-
-    <title>IITM Interactive Intelligence Lab </title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
-
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/iil.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <nav class="navbar with-shadow navbar-expand-md navbar-light fixed-top bg-light">
-
-    <div class="container">
-      <!-- Logo Section -->
-      <a class="navbar-brand" href="#">
-        <img src="images/iillogo.png" width="30" height="30" class="d-inline-block align-top" alt="IIL Logo">
-       <span class="navbar-brand-expanded hidden-md-down"> Interactive Intelligence Lab</span>
-       <span class="navbar-brand-short hidden-md-up">IIL</span> <span class="logotext-tail"> IITM </span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navigation Links -->
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="people.html">People</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="publications.html">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact-Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </nav>
+---
+layout: default
+---
 
     <div id="research-areas-carousel" class="carousel slide" data-ride="carousel">
 
       <ol class="carousel-indicators">
         <li data-target="#research-areas-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#research-areas-carousel" data-slide-to="1"></li>
-        <li data-target="#research-areas-carousel" data-slide-to="2"></li>
+         <li data-target="#research-areas-carousel" data-slide-to="1"></li>
       </ol>
 
       <div class="carousel-inner">
 
-        <div class="carousel-item active">
-          <img class="first-slide" src="images/carousel3_bg.jpg" alt="First slide">
+        {% for item in site.data.carousel %}
+        <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
+          <img class="{{forloop.index}}-slide" src="images/{{ item.image }}" alt="First slide">
           <div class="container">
             <div class="carousel-caption  d-md-block text-left">
-              <h1>Network Representation Learning</h1>
-              <p> We learn distributed vector representations of the vertices in large-scale networks that
-                  preserve structural and semantic similarity of the vertices in the embedding space </p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
+              <h1> {{ item.title }} </h1>
+              <p> {{ item.message }} </p>
+              <p><a class="btn btn-lg btn-primary" href="{{ item.link }}" role="button">Learn More</a></p>
             </div>
           </div>
         </div>
+        {% endfor %}
 
-        <div class="carousel-item">
-          <img class="second-slide" src="images/carousel2_bg.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption d-md-block text-left">
-              <h1> Reinforcement Learning</h1>
-              <p> Learning algorithms that enable software agents to take actions that maximizes some notion of cumulative 
-                  reward.
-              </p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="third-slide" src="images/carousel1_bg.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption d-md-block text-left">
-              <h1> Natural Language Processing </h1>
-              <p> We develop algorithms to process and understand natural language to aid interaction between computers
-                  and humans
-              </p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn More</a></p>
-            </div>
-          </div>
-        </div>
       </div>
       <a class="carousel-control-prev" href="#research-areas-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -111,21 +36,21 @@
     </div>
 
     <!-- News and Spotlight Events  --> 
-    <div class="container news">
+    <div class="container">
 
       <div class="row">
 
         <div class="col-sm-8 news">
-          <h3 class="col-sm-6 section-title"> News </h3>
+          <h3 class="section-title pl-0"> News </h3>
 
-          <div class="card"> 
-            <div class="row no-gutters align-items-center">
-            <div class="col-sm-2">
-            <img  class="news-img img-responsive center-block" src="images/news/Kamakoti.jpg" alt="Card image cap" >
+          <div class="card drop-shadow"> 
+            <div class="row no-gutters ">
+            <div class="col-2">
+            <img  class="member-img img-responsive center-block" src="images/news/Kamakoti.jpg" alt="Card image cap" >
             </div>
-            <div class="card-body col-sm-10">
-              <h6 class="card-subtitle mb-2 ">26 August 2017</h6>
+            <div class="card-body col-10">
               <a class="card-title" href="#">Prof. V. Kamakoti to chair GoI Task Force on AI for Development across various fields.</a>
+              <h6 class="card-subtitle mb-2 ">26 August 2017</h6>
               <p class="card-text">
                  Commerce and Industry Minister Nirmala Sitharaman has constituted a Task Force chaired by V. Kamakoti of IIT Madras to explore possibilities to leverage Artificial Intelligence (AI) for development across various fields
               </p>
@@ -133,68 +58,76 @@
             </div>
           </div>
 
-          <div class="card"> 
-            <div class="row no-gutters align-items-center">
-            <div class="col-sm-2">
-            <img  class="news-img img-responsive center-block" src="images/news/preksha.jpg" alt="Card image cap" >
-            </div>
-            <div class="card-body col-sm-10">
-              <h6 class="card-subtitle mb-2">12 July 2017</h6>
-              <a class="card-title" href="#">Preksha Nema (CS15D201) has been selected for Google India PhD Fellowship</a>
-              <p class="card-text">
-                 Preksha Nema (CS15D201) who is a PhD scholar at the CSE dept has been selected for Google India PhD Fellowship.
-              </p>
-            </div>
-            </div>
-          </div>
 
         </div>
+
         <div class="col-sm-4 events">
-          <h3 class="section-title"> Events </h3> 
+
+          <h3 class="section-title pl-0"> Events </h3> 
 
           <div class="card event-card"> 
-              <div class="calbox"> 
-               4:30pm, 21 Sep @ Alan M. Turing Hall
+              <a class="card-title" href="#">Seminar on Content Optimization</a>
+              <div class="card-subtitle"> 
+               4:00 pm, 27 Sep | Alan M. Turing Hall
               </div>
-              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
           </div>
 
           <div class="card event-card"> 
-              <div class="calbox"> 
-                2pm, 23 Sep @ Ada Lovelace Hall
+              <a class="card-title" href="#">
+                 Seminar on Knowledge Representation and Reasoning 
+                 with Deep Neural Networks, by Arvind Neelakantan, UMass Amherst
+              </a>
+              <div class="card-subtitle"> 
+                4:30 pm, 21 Sep | Alan M. Turing Hall
               </div>
-              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
           </div>
 
-          <div class="card event-card"> 
-              <div class="calbox"> 
-                2pm, 25 Sep @ Ada Lovelace Hall
-              </div>
-              <a class="card-title" href="#">Seminar on Knowledge Representation and Reasoning with Deep Neural Networks</a>
-          </div>
+
+
+         </div>
         </div>
-      </div>
+
+        <div class="row">
+        <div class="col-12 " >
+          <div class="pub-container">
+          <h3 class="section-title mt-4" > Recent Publications </h3>
+          <ol class="px-0 mx-0 publications list">
+            {% assign recent_papers = site.data.publications | sort:"year" | reverse %}
+            {% for paper in recent_papers  limit:2 %}
+              <li>
+                <span class="pub-title">{{ paper.title}} </span> 
+                <span class="pub-authors">
+                {% assign authors = paper.author | split: " and " %}
+                {% assign str = "" %}
+                {% for author in authors %} 
+                  {% assign curr_str =  author | split: "," | reverse | join: " "| append:", " %}
+                  {% assign str = str | append: curr_str %} 
+                {% endfor %}
+                {% assign len = str | size | minus:2 %}
+                {{ str | slice:0, len }}
+                </span>
+                <span class="pub-journal">{{ paper.journal }}</span>
+                <span class="pub-year">({{ paper.year }})</span>
+                <span class="pub-location"></span>
+                <span class="pub-tail">
+                  {{ paper.volume }}
+                  {% if paper.number %} ({{ paper.number }}) {% endif %}
+                  {{ paper.pages}}
+                </span>
+                <span class="pub-links"> 
+                  {% if paper.link %}<a href="{{ paper.link }}">pdf</a> {% endif %}
+                  <!-- <a href="#">git</a> -->
+                </span>
+              </li>
+              {% endfor %}
+              <li class="border-0">
+               <a class="btn btn-primary btn-sm btn-view-more" role="button" href="publications"> <strong> + </strong>  View More Publications </a>
+              </li>
+
+            </ol>
+            </div>
+            </div>
+            </div>
 
     </div>
 
-
-
-      <!-- FOOTER -->
-      <div class="container">
-      <footer>
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>Interactive Intelligence Lab | IIT Madras &copy; 2017 </p>
-      </footer>
-      </div>
-
-    </div>
-
-
-    <!-- Bootstrap core JavaScript -->
-
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-  </body>
-</html>
