@@ -7,5 +7,5 @@ area:
 bio:
 email:
 type: phd
-link: https://www.google.co.in/
+webpage: https://www.google.co.in/
 ---
