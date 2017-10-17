@@ -1,10 +1,11 @@
 ---
 layout: member
-name: gurneeth Singh
+name: Gurneet Singh
 image: default.png
 designation: Dual Degree
 area:
 bio:
 email:
 type: dual
+webpage: https://gur-neet.github.io/
 ---
