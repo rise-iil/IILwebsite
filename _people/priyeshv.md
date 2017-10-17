@@ -1,11 +1,11 @@
 ---
 layout: member
-name: Pritha Ganguly
-image: pritha.jpg
+name: Privesh V
+image: priyesh.jpg
 designation: M. S. Scholar
 area:
 bio:
 email:
 type: ms
-webpage: https://gangulypritha.github.io/
+webpage: https://priyeshv.github.io/
 ---
