@@ -3,7 +3,7 @@ layout: member
 name: Denzil Francis Crasta
 image: denzil.jpg
 designation: M.Tech
-area:
+area: networks
 bio:
 email:
 type: mtech

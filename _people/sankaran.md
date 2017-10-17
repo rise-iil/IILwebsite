@@ -3,7 +3,7 @@ layout: member
 name: Sankaran V
 image: sankaran.jpg
 designation: Project Associate
-area:
+area: networks
 bio:
 email:
 type: ps

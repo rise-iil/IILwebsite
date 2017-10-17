@@ -3,7 +3,7 @@ layout: member
 name: Akash Jain
 image: akash.jpg
 designation: M. S. Scholar
-area:
+area: networks
 bio:
 email:
 type: ms

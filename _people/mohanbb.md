@@ -3,7 +3,7 @@ layout: member
 name: Mohan Bhambhani
 image: mohan.jpg
 designation: Dual Degree
-area:
+area: networks
 bio:
 email:
 type: dual

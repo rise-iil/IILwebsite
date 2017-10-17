@@ -3,7 +3,7 @@ layout: member
 name: Deepak Mittal
 image: deepak.jpg
 designation: M. S. Scholars
-area:
+area: cv
 bio:
 email:
 type: ms

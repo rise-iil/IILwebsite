@@ -3,7 +3,7 @@ layout: member
 name: Preksha Nema
 image: preksha.jpeg
 designation: PhD. Scholar
-area:
+area: nlp
 bio:
 email:
 type: phd

@@ -3,7 +3,7 @@ layout: member
 name: Ishu D Garg
 image: default.png
 designation: Dual Degree
-area:
+area: cv
 bio:
 email:
 type: dual

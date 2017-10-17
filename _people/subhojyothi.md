@@ -3,7 +3,7 @@ layout: member
 name: Subhojyothi Mukherjee
 image: subho.JPG
 designation: M. S. Scholar
-area:
+area: rl
 bio:
 email:
 type: ms

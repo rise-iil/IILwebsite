@@ -7,13 +7,15 @@ layout: default
       <ol class="carousel-indicators">
         <li data-target="#research-areas-carousel" data-slide-to="0" class="active"></li>
          <li data-target="#research-areas-carousel" data-slide-to="1"></li>
+         <li data-target="#research-areas-carousel" data-slide-to="2"></li>
+         <li data-target="#research-areas-carousel" data-slide-to="3"></li>
       </ol>
 
       <div class="carousel-inner">
 
         {% for item in site.data.carousel %}
         <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
-          <img class="{{forloop.index}}-slide" src="images/{{ item.image }}" alt="First slide">
+          <img class="{{forloop.index}}-slide" src="images/{{item.image}}" alt="First slide">
           <div class="container">
             <div class="carousel-caption  d-md-block text-left">
               <h1> {{ item.title }} </h1>
@@ -42,22 +44,22 @@ layout: default
 
         <div class="col-sm-8 news">
           <h3 class="section-title pl-0"> News </h3>
-
-          <div class="card drop-shadow"> 
-            <div class="row no-gutters ">
-            <div class="col-2">
-            <img  class="member-img img-responsive center-block" src="images/news/Kamakoti.jpg" alt="Card image cap" >
+          {% for item in site.data.news %}
+            <div class="card drop-shadow"> 
+              <div class="row no-gutters ">
+              <div class="col-2">
+              <img  class="member-img img-responsive center-block" src="{{item.image}}" alt="Card image cap" >
+              </div>
+              <div class="card-body col-10">
+                <a class="card-title" href="{{item.link}}">{{item.title}}</a>
+                <h6 class="card-subtitle mb-2 ">{{item.date}}</h6>
+                <p class="card-text">
+                   {{item.description}}
+                </p>
+              </div>
+              </div>
             </div>
-            <div class="card-body col-10">
-              <a class="card-title" href="#">Prof. V. Kamakoti to chair GoI Task Force on AI for Development across various fields.</a>
-              <h6 class="card-subtitle mb-2 ">26 August 2017</h6>
-              <p class="card-text">
-                 Commerce and Industry Minister Nirmala Sitharaman has constituted a Task Force chaired by V. Kamakoti of IIT Madras to explore possibilities to leverage Artificial Intelligence (AI) for development across various fields
-              </p>
-            </div>
-            </div>
-          </div>
-
+          {% endfor %}
 
         </div>
 
@@ -65,23 +67,17 @@ layout: default
 
           <h3 class="section-title pl-0"> Events </h3> 
 
+          {% for event in site.data.events %}
+
           <div class="card event-card"> 
-              <a class="card-title" href="#">Seminar on Content Optimization</a>
+              <a class="card-title" href="#">{{ event.title }}</a> 
+              {% if event.presenter %} by {{ event.presenter}}{% if event.affiliation %}, {{ event.affiliation }} {% endif %} {% endif %}
               <div class="card-subtitle"> 
-               4:00 pm, 27 Sep | Alan M. Turing Hall
+               {{ event.time }}, {{ event.date }} | {{ event.venue }}
               </div>
           </div>
 
-          <div class="card event-card"> 
-              <a class="card-title" href="#">
-                 Seminar on Knowledge Representation and Reasoning 
-                 with Deep Neural Networks, by Arvind Neelakantan, UMass Amherst
-              </a>
-              <div class="card-subtitle"> 
-                4:30 pm, 21 Sep | Alan M. Turing Hall
-              </div>
-          </div>
-
+          {% endfor %}
 
 
          </div>

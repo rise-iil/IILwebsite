@@ -3,7 +3,7 @@ layout: member
 name: Soham Parikh
 image: soham.jpg
 designation: Dual Degree
-area:
+area: nlp
 bio:
 email:
 type: dual

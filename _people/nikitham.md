@@ -3,7 +3,7 @@ layout: member
 name: Nikitha Moghe
 image: nikita.jpg
 designation: M. S. Scholar
-area:
+area: nlp
 bio:
 email:
 type: ms

@@ -3,7 +3,7 @@ layout: member
 name: Ananya Sai
 image: ananya.png
 designation: M.Tech
-area:
+area: nlp
 bio:
 email:
 type: mtech

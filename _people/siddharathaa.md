@@ -3,7 +3,7 @@ layout: member
 name: Siddhartha Arora
 image: siddhartha.jpg
 designation: M. S. Scholar
-area:
+area: nlp
 bio:
 email:
 type: ms

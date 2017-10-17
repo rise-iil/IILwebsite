@@ -3,7 +3,7 @@ layout: member
 name: Tarun Kumar
 image: tarun.jpg
 designation: Ph.D. Scholars
-area:
+area: networks
 bio:
 email:
 type: phd

@@ -3,7 +3,7 @@ layout: member
 name: Ashutosh Jha
 image: ashutosh.jpg
 designation: B.Tech
-area:
+area: rl
 bio:
 type: btech
 webpage: https://ashutoshkrjha.github.io/

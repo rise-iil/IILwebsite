@@ -3,7 +3,7 @@ layout: member
 name: Sanchit Agarwal
 image: sanchit.jpg
 designation: Dual Degree
-area:
+area: nlp
 bio:
 email:
 type: dual

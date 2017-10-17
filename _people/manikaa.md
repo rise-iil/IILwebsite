@@ -3,7 +3,7 @@ layout: member
 name: Manika Agarwal
 image: manika.jpg
 designation: Dual Degree
-area:
+area: rl
 bio:
 email:
 type: dual

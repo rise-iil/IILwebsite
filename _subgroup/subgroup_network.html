@@ -1,0 +1,274 @@
+---
+layout: default
+permalink: sg_networks
+---
+
+<section class="jumbotron" id="research-header">
+  <div class="bg-img">
+    <img src="images/carousel2_bg.jpg" />
+  </div>
+  <div class="container">
+      <div class="jumbotron-content ">
+        <h1 class="jumbotron-heading mb-4"  >Networks</h1>
+        <p class="lead" >
+          We learn distributed vector representations of the vertices in large-scale networks that preserve structural and semantic similarity of the vertices in the embedding space   
+        </p>
+      </div>
+  </div>
+</section>
+
+
+<div class="container" id="subgroup" >
+<div class="row justify-content-end" id="research-content-box">
+<div class="col-sm-2 d-sm-none d-md-none d-lg-block d-xl-block " id="sidenav-container">
+  <ul data-spy="affix" data-offset-top="53" class=" nav flex-column sidenav" id="subgroup-sidenav">
+    <li class="nav-item">
+      <a class="nav-link active text-uppercase" href="#topic-about" >About </a>
+    </li>
+    <li class="nav-item">
+    	<a class="nav-link active text-uppercase" href="#topic-people" >People </a>
+    	<ul class="nav  flex-column mb-3">
+	      <li class="nav-item">
+	        <a class="nav-link " href="#topic-phd">Ph.D</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#topic-ms">M.S.</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#topic-mtech">M.Tech/Dual Degree</a>
+	      </li>
+	      <!-- <li class="nav-item">
+	        <a class="nav-link" href="#topic-btech">B.Tech</a>
+	      </li> -->
+	      <li class="nav-item">
+	        <a class="nav-link" href="#topic-projass">Project Associates</a>
+	      </li>
+	    </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-uppercase" href="#topic-pub" >Publications </a>
+    </li>
+  </ul>
+</div>
+<div class="col-sm-10">
+	<div class="container" id="topic-about">
+		<div class="row">
+			<h1  class="col" >About </h1>
+		</div>
+		<div class="row featurette">				
+			<p class="lead">
+				<font size="4.5">
+					The group is active in a wide range of Networks related areas. The research focus of the group spans from complex network modeling to the lower dimensional representation of networks with recent techniques, such as deep learning. The group is highly involved in the study of complex network structures such as Multiplex Networks, Hypergraphs, large graphs etc. More details about our work can be found on this <a href="https://sites.google.com/view/signetprojects/multiplex-networks">page</a>
+				</font>
+			</p>
+		</div>
+	</div>
+
+	<hr class="featurette-divider" id="topic-people">
+	<div class="container">
+		<div class="row">
+			<h1  class="col" >People </h1>
+		</div>
+		<div class="container" id="topic-phd">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > Ph.D Scholars</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% assign faculty = site.people %}
+           {% for member in faculty %}
+             {% if member.type contains "phd" and member.area contains "networks"%}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+     <div class="container" id="topic-phd">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > M.S. Scholars</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "ms" and member.area contains "networks"%}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+     <div class="container" id="topic-mtech">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > M.Tech and Dual Degree</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "mtech" or member.type contains "dual"%}
+	             {% if member.area contains "networks"%}
+		             <div class="card people-card col-sm-3 ">
+		               <div class="card-body drop-shadow-mild">
+		               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+		                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+		                 {% for designation in member.designations %}
+		                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+		                 {% endfor %}
+		                 <p class="card-text">
+		                   {% for area in member.areas %}
+		                      <span class="member-area"> {{area}}</span>
+		                   {% endfor %}
+		                 </p>
+		               </div>
+		             </div>
+		          {%endif%}
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+     <!-- <div class="container" id="topic-btech">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > B.Tech</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "btech" and member.area contains "networks"%}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div> -->
+     <div class="container" id="topic-projass">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > Project Associates</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "ps" and member.area contains "networks"%}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+	</div>
+	<hr class="featurette-divider" id="topic-pub">
+	<div class="row">
+		<h1  class="col" >Publications </h1>
+	</div>
+	<div class="container">
+		<!-- <div class="row list-controls">
+
+	           <input class="col-sm-6 search" placeholder="Search By Paper Title or Author or Year" />
+	           <div class="col-sm-6">
+	             <button class="sort " data-sort="pub-title"> sort by <strong> Title </strong> </button>
+	             <button class="sort " data-sort="pub-year"> sort by <strong> Year </strong> </button>
+	           </div>
+	      </div> -->
+		<div class="row" >
+	            <ol class="col-12 publications list">
+	            {% for paper in site.data.publications %}
+	            	{%if  paper.subgroup contains "nw"%}
+		              <li>
+		                <span class="pub-title">{{ paper.title}} </span> 
+		                <span class="pub-authors">
+		                {% assign authors = paper.author | split: " and " %}
+		                {% assign str = "" %}
+		                {% for author in authors %} 
+		                  {% assign curr_str =  author | split: "," | reverse | join: " "| append:", " %}
+		                  {% assign str = str | append: curr_str %} 
+		                {% endfor %}
+		                {% assign len = str | size | minus:2 %}
+		                {{ str | slice:0, len }}
+		                </span>
+		                <span class="pub-journal">{{ paper.journal }}</span>
+		                <span class="pub-journal">{{ paper.booktitle }}</span>
+		                <!-- <span class="pub-publisher">{{ paper.publisher }}</span> -->
+		                <span class="pub-year">({{ paper.year }})</span>
+		                <span class="pub-location"></span>
+		                <span class="pub-tail">
+		                  {{ paper.volume }}
+		                  {% if paper.number %} ({{ paper.number }}) {% endif %}
+		                  {{ paper.pages}}
+		                </span>
+		                <span class="pub-links"> 
+		                  {% if paper.link %}<a href="{{ paper.link }}">pdf</a> {% endif %}
+		                  <!-- <a href="#">git</a> -->
+		                </span>
+		              </li>
+		            {% endif %}
+	              {% endfor %}
+
+	            </ol>
+	          </div>
+	</div>
+</div>
+</div>
+</div>
+

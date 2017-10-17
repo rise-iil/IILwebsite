@@ -3,7 +3,7 @@ layout: member
 name: Gurneet Singh
 image: default.png
 designation: Dual Degree
-area:
+area: nlp
 bio:
 email:
 type: dual

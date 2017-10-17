@@ -3,7 +3,7 @@ layout: member
 name: Sudarsun S
 image: sudarsun.jpg
 designation: Ph.D. scholar
-area:
+area: networks
 bio:
 email:
 type: phd

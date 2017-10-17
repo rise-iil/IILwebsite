@@ -2,19 +2,24 @@
   image: carousel3_bg.jpg
   message: >
     We learn distributed vector representations of the vertices in large-scale networks that preserve structural and semantic similarity of the vertices in the embedding space 
-  link: NRL
+  link: sg_networks
 
 - title: Reinforcement Learning
   image: carousel2_bg.jpg
   message: >
     Learning algorithms that enable software agents to take actions that maximizes some notion of cumulative reward.
-  link: RL
+  link: sg_rl
 
 - title: Natural Language Processing
   image: carousel1_bg.jpg
   message: >
     We develop algorithms to process and understand natural 
     language to aid interaction between computers and humans
-  link: NLP
+  link: sg_nlp
 
+- title: Computer Vision
+  image: carousel4_bg.jpg
+  message: >
+    We develop algorithms to process visual data for vision based applications
+  link: sg_cv
 

@@ -3,7 +3,7 @@ layout: member
 name: Priyatosh Mishra
 image: priyatosh.jpg
 designation: Ph.D. scholar
-area:
+area: rl
 bio:
 email:
 type: phd

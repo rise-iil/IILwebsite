@@ -1,9 +1,9 @@
 ---
 layout: member
-name: Privesh V
+name: Priyesh V
 image: priyesh.jpg
 designation: M. S. Scholar
-area:
+area: networks
 bio:
 email:
 type: ms
