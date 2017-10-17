@@ -1,5 +1,7 @@
 [
 
+{'subgroup': 'rl', 'title': 'Tracking and Stabilization of Mechanical Systems using Reinforcement Learning', 'journal': 'To appear in the Proceedings of the Fourth Indian Control Conference', 'author': 'Bhuvaneswari, S., Pasumarthy, R., Ravindran, B., and Mahindrakar, A', 'ENTRYTYPE': 'article', 'year': '2018'},
+  
 {'subgroup': 'nlp', 'publisher': 'MIT Press', 'title': 'Correlational neural networks', 'journal': 'Neural computation', 'author': 'Chandar, Sarath and Khapra, Mitesh M and Larochelle, Hugo and Ravindran, Balaraman', 'ENTRYTYPE': 'article', 'year': '2016', 'ID': 'chandar2016correlational'},
 
 {'subgroup': 'misc', 'publisher': 'Springer', 'title': 'Hierarchical activity recognition for dementia care using Markov Logic Network', 'journal': 'Personal and Ubiquitous Computing', 'author': 'Gayathri, KS and Elias, Susan and Ravindran, Balaraman', 'number': '2', 'ID': 'gayathri2015hierarchical', 'volume': '19', 'pages': '271--285', 'year': '2015', 'ENTRYTYPE': 'article'},
