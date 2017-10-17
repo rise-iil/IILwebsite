@@ -5,8 +5,8 @@ description: >
   Interactive Intelligence Lab
   
 port: 8000
-baseurl: ""
-url    : "localhost:8000"
+# baseurl: ""
+url    : "https://rise-iil.github.io"
 include: ['_pages','_subgroup']
 
 collections:
