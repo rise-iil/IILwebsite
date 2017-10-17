@@ -1,0 +1,187 @@
+---
+layout: default 
+title: People
+permalink: people
+---
+
+      <div class="container" id="people-container">
+
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > Faculty </h3>
+            </div>
+          </div>
+          <div class="row">
+
+           {% assign faculty = site.people %}
+           {% for member in faculty %}
+             {% if member.type contains "faculty" %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > Ph.D Scholars</h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "phd" %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > M.S. Scholars </h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "ms"  %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > M.Tech and Dual Degree </h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "mtech" or member.type contains "dual"  %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > B.Tech </h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "btech"  %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="section-title" > Project Associates </h3>
+            </div>
+          </div>
+
+          <div class="row" id="faculty-panel">
+           {% for member in faculty %}
+             {% if member.type contains "ps"  %}
+             <div class="card people-card col-sm-3 ">
+               <div class="card-body drop-shadow-mild">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
+                 <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
+                 {% for designation in member.designations %}
+                 <h6 class="card-subtitle mb-2">{{ designation }}</h6>
+                 {% endfor %}
+                 <p class="card-text">
+                   {% for area in member.areas %}
+                      <span class="member-area"> {{area}}</span>
+                   {% endfor %}
+                 </p>
+               </div>
+             </div>
+             {% endif %}
+           {% endfor %}
+
+          </div>
+     </div>
+
