@@ -48,7 +48,7 @@ permalink: people
              {% if member.type contains "phd" %}
              <div class="card people-card col-sm-3 ">
                <div class="card-body drop-shadow-mild">
-               <img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}">
+               <a href="{{member.webpage}}" target="_blank"><img class="card-img-top  center-block" src="/images/members/{{ member.image }}" alt="{{ member.name }}"></a>
                  <h5 class="card-title "><a href="{{member.webpage}}" target="_blank">{{ member.name }}</a></h5>
                  {% for designation in member.designations %}
                  <h6 class="card-subtitle mb-2">{{ designation }}</h6>
