@@ -1,6 +1,8 @@
 [
 
 {'subgroup': 'rl', 'title': 'Tracking and Stabilization of Mechanical Systems using Reinforcement Learning', 'journal': 'To appear in the Proceedings of the Fourth Indian Control Conference', 'author': 'Bhuvaneswari, S., Pasumarthy, R., Ravindran, B., and Mahindrakar, A', 'ENTRYTYPE': 'article', 'year': '2018'},
+
+{'subgroup': 'nlp', 'title': ' Partial Parameter HMM Based Clustering on Loan Repayment Data: Insights into Financial Behavior and Intent to Repay', 'journal': 'To appear in the Proceedings of the Fifty First Hawaii International Conference on System Sciences', 'author': 'Philip, D., Sudarsanam, N., and Ravindran, B.', 'ENTRYTYPE': 'article', 'year': '2018'},
   
 {'subgroup': 'nlp', 'publisher': 'MIT Press', 'title': 'Correlational neural networks', 'journal': 'Neural computation', 'author': 'Chandar, Sarath and Khapra, Mitesh M and Larochelle, Hugo and Ravindran, Balaraman', 'ENTRYTYPE': 'article', 'year': '2016', 'ID': 'chandar2016correlational'},
 
