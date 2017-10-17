@@ -67,7 +67,7 @@ layout: default
 
           <h3 class="section-title pl-0"> Events </h3> 
 
-          {% for event in site.data.events %}
+          {% for event in site.data.events limit:5 %}
 
           <div class="card event-card"> 
               <a class="card-title" href="#">{{ event.title }}</a> 
