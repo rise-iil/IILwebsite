@@ -1,6 +1,6 @@
 ---
 layout: member
-name: Tarun Kumar
+name: Tarunn Kumar
 image: tarun.jpg
 designation: Ph.D. Scholars
 area:
