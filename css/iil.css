@@ -366,10 +366,10 @@ a.btn-view-more {
 
 
 .member-area::after {
-  content: ",";
+/*  content: ",";
   display: inline-block;
   padding-right: 3px;
-  color:#555;
+  color:#555;*/
 }
 
 
