@@ -1,6 +1,6 @@
 ---
 layout: member
-name: Rohit Bhandru
+name: Rohith Bhandaru
 image: rohith.jpg
 designation: Dual Degree
 area: networks
