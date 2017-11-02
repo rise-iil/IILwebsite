@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Gurneet Singh
-image: default.png
+image: gurneet.jpg
 designation: Dual Degree
 area: nlp
 bio:
